@@ -6,6 +6,7 @@
         There are three things we just specified. A name of bounceArrow, a duration of .7s and infinite repetition.
   */
 
+  animation: bounceArrow .7s infinite;
 
 }
 .spinMe {
@@ -14,6 +15,7 @@
         animation: spin 2s infinite; 
   */
 
+  animation: spin 2s infinite;
 
 }
 
@@ -34,6 +36,8 @@
         animation-fill-mode: forwards;
   */
 
+  animation: loadBar 4s infinite;
+  animation-fill-mode: forwards;
 
 }
 
@@ -46,6 +50,7 @@
       animation: movingBox 5s; 
   */
 
+  animation: movingBox 5s infinite; 
 
 }
 
@@ -55,21 +60,21 @@
     /*Add the property 
         margin-top: 0px;
      */
-
+    margin-top: 0px;
 
   }
   50% {
     /*Add the property 
         margin-top: 7px;
      */
-
+    margin-top: 7px;
 
   }
   to {
     /*Add the property 
       margin-top: 0px;
     */
-
+    margin-top: 0px;
 
   }
 }
@@ -81,6 +86,7 @@
         transform: rotate(180deg);
      */
 
+     transform: rotate(180deg);
 
   }
   to {
@@ -88,6 +94,7 @@
         transform: rotate(-180deg);
       */ 
 
+      transform: rotate(-180deg);
 
   }
 }
@@ -96,13 +103,11 @@
 /* Animation 3: Loading Bar*/
 @keyframes loadBar {
   from {
-   /* width: 40%;*/ 
-
+   width: 0%; 
 
   }
   to {
-    /* width: 40%;*/ 
-
+  width: 100%; 
 
   }
 }
@@ -111,27 +116,27 @@
 /* Animation 4: Moving Box*/
 @keyframes movingBox {
   from {
-    /* transform: translate3d(0px, 0px, 0px);*/
+    transform: translate3d(0px, 0px, 0px);
 
 
   }
   25% {
-    /* transform: translate3d(50px, 25px, 0px);*/
+    transform: translate3d(50px, 25px, 0px);
 
 
   }
   50% {
-    /* transform: translate3d(100px, 50px, 0px); */
+    transform: translate3d(100px, 50px, 0px); 
 
 
   }
   75% {
-    /* transform: translate3d(200px, 100px, 0px); */
+    transform: translate3d(200px, 100px, 0px);
 
 
   }
   to {
-    /* transform: translate3d(0px, 0px, 0px); */
+    transform: translate3d(0px, 0px, 0px); 
 
 
   }
